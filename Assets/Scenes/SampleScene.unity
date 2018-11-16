@@ -278,12 +278,17 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
+<<<<<<< HEAD
   m_Size: {x: 4.0625, y: 2}
+=======
+  m_Size: {x: 0.32, y: 0.32}
+>>>>>>> parent of c992d1c... Tiles and whatnot
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &828555605
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,10 +372,14 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &828555608
+=======
+--- !u!4 &624343126
+>>>>>>> parent of c992d1c... Tiles and whatnot
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 828555605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -381,10 +390,22 @@ Transform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &828555609
+=======
+  m_GameObject: {fileID: 624343123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &624343127
+>>>>>>> parent of c992d1c... Tiles and whatnot
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 828555605}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -392,3 +413,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slash: 0
+=======
+  m_GameObject: {fileID: 624343123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfca6d38aee8cff40a033b3739948f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 10
+>>>>>>> parent of c992d1c... Tiles and whatnot
