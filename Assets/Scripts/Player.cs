@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && onGround)
         {
             onGround = false; 
-            rb.velocity += new Vector2(0, 15.0f);
+            rb.velocity += new Vector2(0, 10.0f);
             animator.SetBool("isJumping", true);
             Instantiate(jumpCloud, transform.position, Quaternion.identity); 
         }
