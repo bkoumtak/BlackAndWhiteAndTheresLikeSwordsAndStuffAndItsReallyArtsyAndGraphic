@@ -63,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61118736755501480
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -122,6 +122,10 @@ MonoBehaviour:
   velocity: 0
   gscale: 0
   jumpCloud: {fileID: 4157696178696586, guid: ac46c16aa9c41504b81eb446ba71ef8e, type: 2}
+  slashes:
+  - {fileID: 4996384711329840, guid: 61d9d50cec35bfe429a799a0a0149b47, type: 2}
+  - {fileID: 4354967864940424, guid: 8dd7079d08a94794884d55c34627d663, type: 2}
+  - {fileID: 4474237354255130, guid: efa6af88de8bc9b41bd2eb099854c420, type: 2}
 --- !u!212 &212064656923710436
 SpriteRenderer:
   m_ObjectHideFlags: 1
