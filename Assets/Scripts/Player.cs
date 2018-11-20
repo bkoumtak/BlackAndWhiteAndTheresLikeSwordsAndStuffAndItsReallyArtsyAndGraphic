@@ -7,8 +7,10 @@ public class Player : MonoBehaviour
     public float walkSpeed = 10.0f;
     public float velocity;
     public float gscale;
-    public Transform jumpCloud; 
-    bool onGround = false; 
+    public Transform jumpCloud;
+    public Transform[] slashes;
+    bool onGround = false;
+    bool isAttacking = false; 
     bool facingRight = true;
     SpriteRenderer spriterenderer;
     Animator animator;
@@ -26,12 +28,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         Walk();
+        Attack(); 
         velocity = rb.velocity.y;
         gscale = rb.gravityScale;
         if (Input.GetKeyDown(KeyCode.Space) && onGround)
         {
             onGround = false; 
-            rb.velocity += new Vector2(0, 10.0f);
+            rb.velocity += new Vector2(0, 15.0f);
             animator.SetBool("isJumping", true);
             Instantiate(jumpCloud, transform.position, Quaternion.identity); 
         }
@@ -50,8 +53,12 @@ public class Player : MonoBehaviour
 
     void Walk()
     {
-        float walkTranslation = Input.GetAxis("Horizontal") * walkSpeed * Time.deltaTime;
-
+        float walkTranslation = 0.0f;
+        if (!isAttacking)
+        {
+           walkTranslation = Input.GetAxis("Horizontal") * walkSpeed * Time.deltaTime;
+        }
+        
         transform.Translate(walkTranslation, 0, 0);
         if (walkTranslation < 0 && facingRight)
         {
@@ -70,6 +77,59 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isWalking", true);
         }
+    }
+
+    void Attack()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Idle-Sword"))
+        {
+            animator.ResetTrigger("Attack2");
+            animator.ResetTrigger("Attack1");
+            animator.ResetTrigger("Attack3");
+            isAttacking = false; 
+        }
+
+        if (Input.GetKeyDown(KeyCode.J)) {
+            isAttacking = true; 
+            float rotation = 0; 
+            if (facingRight)
+            {
+                rotation = 0f; 
+            }
+            else
+            {
+                rotation = 180f; 
+            }
+
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Idle-Sword")) { 
+                animator.SetTrigger("Attack1");
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-1"))
+            {
+                animator.SetTrigger("Attack2");
+                Object.Instantiate(slashes[1], transform.position, Quaternion.Euler(0, rotation, 0));
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-2"))
+            {
+                animator.SetTrigger("Attack3");
+                Object.Instantiate(slashes[2], transform.position, Quaternion.Euler(0, rotation, 0));
+            }
+        }
+    }
+
+    void Attack1()
+    {
+        float rotation = 0;
+        if (facingRight)
+        {
+            rotation = 0f;
+        }
+        else
+        {
+            rotation = 180f;
+        }
+
+        Object.Instantiate(slashes[0], transform.position, Quaternion.Euler(0, rotation, 0));
     }
 
     void Flip()
