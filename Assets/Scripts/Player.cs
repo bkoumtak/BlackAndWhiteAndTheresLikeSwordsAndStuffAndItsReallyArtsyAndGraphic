@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     bool onGround = false;
     bool isAttacking = false; 
     bool facingRight = true;
+    public bool isWhite = true; 
+
     SpriteRenderer spriterenderer;
     Animator animator;
     Rigidbody2D rb;
@@ -28,7 +30,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         Walk();
-        Attack(); 
         velocity = rb.velocity.y;
         gscale = rb.gravityScale;
         if (Input.GetKeyDown(KeyCode.Space) && onGround)
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
             onGround = false; 
             rb.velocity += new Vector2(0, 15.0f);
             animator.SetBool("isJumping", true);
+            changeObjectColor(jumpCloud); 
             Instantiate(jumpCloud, transform.position, Quaternion.identity); 
         }
 
@@ -49,14 +51,29 @@ public class Player : MonoBehaviour
             rb.gravityScale = 10;
             animator.SetBool("isFalling", true);
         }
+
+        /* Determines the form of the player */
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            isWhite = !isWhite;
+        }
+
+        changeObjectColor(transform);
+
+        Attack();
     }
 
     void Walk()
     {
         float walkTranslation = 0.0f;
-        if (!isAttacking)
+        
+        if (isAttacking && onGround)
         {
-           walkTranslation = Input.GetAxis("Horizontal") * walkSpeed * Time.deltaTime;
+            walkTranslation = 0.0f; 
+        } 
+        else
+        {
+            walkTranslation = Input.GetAxis("Horizontal") * walkSpeed * Time.deltaTime;
         }
         
         transform.Translate(walkTranslation, 0, 0);
@@ -99,7 +116,7 @@ public class Player : MonoBehaviour
             else
             {
                 rotation = 180f; 
-            }
+            } 
 
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Idle-Sword")) { 
                 animator.SetTrigger("Attack1");
@@ -107,12 +124,30 @@ public class Player : MonoBehaviour
             else if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-1"))
             {
                 animator.SetTrigger("Attack2");
+                changeObjectColor(slashes[1]);
                 Object.Instantiate(slashes[1], transform.position, Quaternion.Euler(0, rotation, 0));
             }
             else if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-2"))
             {
                 animator.SetTrigger("Attack3");
+                changeObjectColor(slashes[2]);
                 Object.Instantiate(slashes[2], transform.position, Quaternion.Euler(0, rotation, 0));
+            }
+        }
+    }
+
+    void changeObjectColor(Transform t)
+    {
+        if (t != null)
+        {
+            SpriteRenderer t_sprite = t.GetComponent<SpriteRenderer>(); ;
+            if (isWhite)
+            {
+                t_sprite.color = Color.white;
+            }
+            else
+            {
+                t_sprite.color = Color.black;
             }
         }
     }
@@ -128,7 +163,7 @@ public class Player : MonoBehaviour
         {
             rotation = 180f;
         }
-
+        changeObjectColor(slashes[0]);
         Object.Instantiate(slashes[0], transform.position, Quaternion.Euler(0, rotation, 0));
     }
 
