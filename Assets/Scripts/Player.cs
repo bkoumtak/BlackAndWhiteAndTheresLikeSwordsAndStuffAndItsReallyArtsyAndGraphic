@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float walkSpeed = 10.0f;
     public float velocity;
+    public float maxVelocity = -40.0f; 
     public float gscale;
     public Transform jumpCloud;
     public Transform[] slashes;
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Walk();
+        rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, maxVelocity));
         velocity = rb.velocity.y;
         gscale = rb.gravityScale;
         if (Input.GetKeyDown(KeyCode.Space) && onGround)
