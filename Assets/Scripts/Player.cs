@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -17,7 +18,12 @@ public class Player : MonoBehaviour
     bool isAttacking = false; 
     bool facingRight = true;
     public bool isWhite = true;
-    public int health = 10; 
+    public int health = 10;
+
+    public Text txtHealth;
+    public Text txtSouls;
+
+    int switches = 10; 
 
     SpriteRenderer spriterenderer;
     SpriteRenderer eye_renderer; 
@@ -51,6 +57,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        txtHealth.text = "Health: " + health;
+        txtSouls.text = "Souls: " + switches; 
         Walk();
         rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, maxVelocity));
         velocity = rb.velocity.y;
@@ -82,7 +90,11 @@ public class Player : MonoBehaviour
         /* Determines the form of the player */
         if (Input.GetKeyDown(KeyCode.K))
         {
-            isWhite = !isWhite;
+            if (switches > 0) {
+                isWhite = !isWhite;
+                switches--; 
+            }
+            
         }
 
         changeObjectColor(transform);
@@ -131,11 +143,17 @@ public class Player : MonoBehaviour
     public void setAttackFalse()
     {
         animator.SetBool("AirAttack", false);
+        eye_animator.SetBool("AirAttack", false); 
     }
 
     public bool isPlayerWhite()
     {
         return isWhite; 
+    }
+
+    public void addSwitches()
+    {
+        switches++; 
     }
 
     void Attack()
@@ -156,6 +174,7 @@ public class Player : MonoBehaviour
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Jump") || animator.GetCurrentAnimatorStateInfo(0).IsName("White-Jump-Down"))
             {
                 animator.SetBool("AirAttack", true);
+                eye_animator.SetBool("AirAttack", true);
                 //animator.ResetTrigger("AttackA");
             }
 
@@ -244,6 +263,7 @@ public class Player : MonoBehaviour
         {
             onGround = true;
             animator.SetBool("AirAttack", false);
+            eye_animator.SetBool("AirAttack", false);
             rb.gravityScale = 2;
             animator.SetBool("isFalling", false);
             eye_animator.SetBool("isFalling", false);

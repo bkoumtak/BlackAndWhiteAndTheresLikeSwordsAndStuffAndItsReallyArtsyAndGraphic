@@ -10,7 +10,8 @@ public class TriGhost : MonoBehaviour {
     float speed = 10.0f;
     Animator animator;
     bool flipped = false;
-    Rigidbody2D rb; 
+    Rigidbody2D rb;
+    public Transform item; 
    
 
 	// Use this for initialization
@@ -68,6 +69,7 @@ public class TriGhost : MonoBehaviour {
 
             if (!player.isPlayerWhite() && isBlack)
             {
+                Instantiate(item, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
         }

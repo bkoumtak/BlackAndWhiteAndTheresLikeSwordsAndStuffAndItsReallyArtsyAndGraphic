@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBlack: 0
+  item: {fileID: 4310374208540628, guid: 7bdb946b676673b43a4b5988326c1848, type: 2}
 --- !u!212 &212335981250152820
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -283,7 +284,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300030, guid: 448fb0a6e2b2d27429d299a7ed0745ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

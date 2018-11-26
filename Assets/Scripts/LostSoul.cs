@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine; 
+﻿using UnityEngine; 
 using System.Collections;
 using System.Collections.Generic;
-using Random = System.Random;
+//using Random = System.Random;
 
 public class LostSoul : MonoBehaviour {
     Rigidbody2D rb;
@@ -15,7 +14,9 @@ public class LostSoul : MonoBehaviour {
     public bool flipped = false;
     public bool right = false; 
     public bool isBlack = false;
-    public bool isAware = false; 
+    public bool isAware = false;
+
+    public Transform item; 
 
 	// Use this for initialization
 	void Start () {
@@ -34,8 +35,6 @@ public class LostSoul : MonoBehaviour {
         //    step *= 2; 
         if (player != null)
         {
-
-
             Vector3 dest = player.gameObject.transform.position;
 
             Collider2D col = GetComponent<Collider2D>();
@@ -87,7 +86,6 @@ public class LostSoul : MonoBehaviour {
             if (flipped)
             {
                 force = new Vector2(-7, 5);
-              
             }
             else
             {
@@ -105,9 +103,11 @@ public class LostSoul : MonoBehaviour {
             {
                 if(isBlack)
                 {
+                    
+                    Instantiate(item, transform.position - new Vector3(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 0.0f), Quaternion.identity);
+                    Instantiate(item, transform.position + new Vector3(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 0.0f), Quaternion.identity);
                     Destroy(gameObject);
                 }
-               
             }
         }
 
