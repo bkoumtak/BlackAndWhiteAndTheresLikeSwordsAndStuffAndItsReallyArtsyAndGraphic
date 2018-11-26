@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
     public float walkSpeed = 10.0f;
     public float velocity;
-    public float maxVelocity = -40.0f; 
+    public float maxVelocity = -40.0f;
+    public Collider2D edgeCollider; 
     public float gscale;
     public Transform jumpCloud;
     public Transform[] slashes;
@@ -32,6 +33,16 @@ public class Player : MonoBehaviour
         eye_animator = eyes.GetComponent<Animator>(); 
     }
 
+    private void FixedUpdate()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.7f); 
+
+        if (hit.collider)
+        {
+            if (hit.collider.tag == "Ground")
+                Debug.Log("You hit the wall");
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -39,7 +50,7 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, maxVelocity));
         velocity = rb.velocity.y;
         gscale = rb.gravityScale;
-        if (Input.GetKeyDown(KeyCode.Space) && onGround)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             onGround = false; 
             rb.velocity += new Vector2(0, 15.0f);
@@ -142,12 +153,12 @@ public class Player : MonoBehaviour
                     rotation = 180f;
                 }
 
-                if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Idle-Sword") || animator.GetCurrentAnimatorStateInfo(0).IsName("White-Run"))
-                {
-                    animator.SetTrigger("Attack1");
-                    eye_animator.SetTrigger("Attack1");
-                }
-                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-1"))
+                //if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Idle-Sword") || animator.GetCurrentAnimatorStateInfo(0).IsName("White-Run"))
+                //{
+                //    animator.SetTrigger("Attack1");
+                //    eye_animator.SetTrigger("Attack1");
+                //}
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-1"))
                 {
                     animator.SetTrigger("Attack2");
                     eye_animator.SetTrigger("Attack2");
@@ -160,6 +171,11 @@ public class Player : MonoBehaviour
                     eye_animator.SetTrigger("Attack3");
                     changeObjectColor(slashes[2]);
                     Object.Instantiate(slashes[2], transform.position, Quaternion.Euler(0, rotation, 0));
+                }
+                else
+                {
+                    animator.SetTrigger("Attack1");
+                    eye_animator.SetTrigger("Attack1");
                 }
             }
         }
@@ -210,6 +226,24 @@ public class Player : MonoBehaviour
         animator.SetBool("isFalling", false);
         eye_animator.SetBool("isFalling", false); 
         animator.SetBool("onGround", true);
-        eye_animator.SetBool("onGround", true); 
+        eye_animator.SetBool("onGround", true);
+
+        Collider2D collider = collision.collider; 
+        
+        /*
+        if (collision.collider.tag == "Ground")
+        {
+            Vector3 contactPoint = collision.contacts[0].point;
+            Vector3 center = collider.bounds.center;
+
+            bool left = contactPoint.x < center.x;
+            bool top = contactPoint.y > center.y;
+
+            if(left)
+            {
+                Debug.Log("Hit wall"); 
+            }
+        }*/
     }
+
 }

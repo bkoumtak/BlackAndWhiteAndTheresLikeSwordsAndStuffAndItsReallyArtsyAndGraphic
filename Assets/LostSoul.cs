@@ -1,14 +1,15 @@
 ﻿using System;
+using UnityEngine; 
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using Random = System.Random;
 
 public class LostSoul : MonoBehaviour {
     Rigidbody2D rb;
     Animator animator;
     Player player;
     Renderer rend; 
-    float speed = 2.0f;
+    float speed = 4.0f;
     float offset = 1.0f;
     bool onGround = false;
     public bool flipped = false;
@@ -22,7 +23,7 @@ public class LostSoul : MonoBehaviour {
         animator = GetComponent<Animator>();
         player = GameObject.FindObjectOfType<Player>();
         rend = GetComponent<Renderer>();
-        Debug.Log(rend); 
+        Debug.Log(rend);
 	}
 
     void FixedUpdate()
@@ -62,6 +63,10 @@ public class LostSoul : MonoBehaviour {
                     animator.ResetTrigger("Hit");
                 }
             }
+        }
+        else
+        {
+            animator.SetBool("isAttacking", false); 
         }
         
     }
