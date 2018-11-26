@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: fbf56e0cd269d304eb6711bf433e7c07
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: InverseLostSoul_0
+    21300002: InverseLostSoul_1
+    21300004: InverseLostSoul_2
+    21300006: InverseLostSoul_3
+    21300008: InverseLostSoul_4
+    21300010: InverseLostSoul_5
+    21300012: InverseLostSoul_6
+    21300014: InverseLostSoul_7
+    21300016: InverseLostSoul_8
+    21300018: InverseLostSoul_9
+    21300020: InverseLostSoul_10
+    21300022: InverseLostSoul_11
+    21300024: InverseLostSoul_12
+    21300026: InverseLostSoul_13
+    21300028: InverseLostSoul_14
+    21300030: InverseLostSoul_15
+    21300032: InverseLostSoul_16
+    21300034: InverseLostSoul_17
+    21300036: InverseLostSoul_18
+    21300038: InverseLostSoul_19
+    21300040: InverseLostSoul_20
+    21300042: InverseLostSoul_21
+    21300044: InverseLostSoul_22
+    21300046: InverseLostSoul_23
+    21300048: InverseLostSoul_24
+    21300050: InverseLostSoul_25
+    21300052: InverseLostSoul_26
+    21300054: InverseLostSoul_27
+    21300056: InverseLostSoul_28
+    21300058: InverseLostSoul_29
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InverseLostSoul_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1451c6b6f6ec3da47803da1fa43b00d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c40279ca644244dbd2ccaceb89bdf0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d443fc6efec77cb4b90d9db29ac5f938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbe07fa131a88b4baf41ad618683d64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c90764d7910fe1478e2f36f52de2684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deeb189287e8be41b7ab31fb6309990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3561bd6ff1d9ccd4cab56d9b17eda677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873c759fdccf1c94d94e940d1b955037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24621a3d4e17e34d807bb4c4485fc05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26a944cfd3e043479c88799a8ec8239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cb08c3143b0cb4ab45ca50f3715e01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5457fcda4cf834045a0e4ea350575403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a1386a807131147b0fd103943b0526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae9c19598e01834bbfaec29c92cabe9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d103e4f37724b5b49bbea9130775ef61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7d73a6bd5e5794ab5cbfe24f684f16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117401086bbdb844eba38744ec510352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e637c1ce535845b4d87a9484a4986a06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e796bfbc3d6eb42bcd72da640d3fc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd455e9ad22b47479d4cb35012be488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_20
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed502babd0b8ed94b80e659816061794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ef09c0df1931146bc4b25de2cb4209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b01d04e6066a14a83a191b2ad8673c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf548a735386414cafa26ff9b603fbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_24
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb0f9c75042d484fa3fdd64f8136440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_25
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298b6aca481f3cf4ab7a041e40d22250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_26
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a64e509082c4a046b0a6ff479ef8db2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de13b04de6ce9464b931cb329c55aa31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_28
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2128aa96eb08ec4f906aee4f801e1a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InverseLostSoul_29
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042875ed97f8e564e826a1127757ff20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6c8da4cc441a77a4cbbd04650e45a1fd
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
