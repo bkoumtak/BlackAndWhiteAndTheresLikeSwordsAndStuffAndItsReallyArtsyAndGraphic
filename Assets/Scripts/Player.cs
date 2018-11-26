@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class Player : MonoBehaviour
     public bool onGround = false;
     bool isAttacking = false; 
     bool facingRight = true;
-    public bool isWhite = true; 
+    public bool isWhite = true;
+    public int health = 10; 
 
     SpriteRenderer spriterenderer;
     SpriteRenderer eye_renderer; 
@@ -40,7 +42,10 @@ public class Player : MonoBehaviour
         if (hit.collider)
         {
             if (hit.collider.tag == "Ground")
-                Debug.Log("You hit the wall");
+            {
+                animator.SetBool("onWall", true); 
+            }
+                //Debug.Log("You hit the wall");
         }
     }
     // Update is called once per frame
@@ -50,7 +55,7 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, maxVelocity));
         velocity = rb.velocity.y;
         gscale = rb.gravityScale;
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && onGround)
         {
             onGround = false; 
             rb.velocity += new Vector2(0, 15.0f);
@@ -59,13 +64,12 @@ public class Player : MonoBehaviour
             eye_animator.SetBool("isRunning", false); 
             changeObjectColor(jumpCloud); 
             Instantiate(jumpCloud, transform.position, Quaternion.identity);
-          
         }
 
         if (rb.velocity.y <= 0)
         {
             animator.SetBool("isJumping", false);
-            eye_animator.SetBool("isJumping", false); 
+            eye_animator.SetBool("isJumping", false);
         }
 
         if (rb.velocity.y < 0)
@@ -120,9 +124,18 @@ public class Player : MonoBehaviour
             {
                 animator.SetBool("isWalking", true);
                 eye_animator.SetBool("isRunning", true);
-            }
-           
+            }        
         }
+    }
+
+    public void setAttackFalse()
+    {
+        animator.SetBool("AirAttack", false);
+    }
+
+    public bool isPlayerWhite()
+    {
+        return isWhite; 
     }
 
     void Attack()
@@ -140,6 +153,12 @@ public class Player : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.J)) {
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Jump") || animator.GetCurrentAnimatorStateInfo(0).IsName("White-Jump-Down"))
+            {
+                animator.SetBool("AirAttack", true);
+                //animator.ResetTrigger("AttackA");
+            }
+
             if (onGround)
             {
                 isAttacking = true;
@@ -192,7 +211,7 @@ public class Player : MonoBehaviour
             }
             else
             {
-                t_sprite.color = Color.black;
+                t_sprite.color = new Color32(32, 23, 76, 255);
             }
         }
     }
@@ -221,13 +240,40 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        onGround = true; 
-        rb.gravityScale = 2;
-        animator.SetBool("isFalling", false);
-        eye_animator.SetBool("isFalling", false); 
-        animator.SetBool("onGround", true);
-        eye_animator.SetBool("onGround", true);
+        if(collision.collider.tag == "Ground")
+        {
+            onGround = true;
+            animator.SetBool("AirAttack", false);
+            rb.gravityScale = 2;
+            animator.SetBool("isFalling", false);
+            eye_animator.SetBool("isFalling", false);
+            animator.SetBool("onGround", true);
+            eye_animator.SetBool("onGround", true);
+        }
+        else if (collision.collider.tag == "Enemy")
+        {
+            Vector2 force; 
 
+            if (collision.gameObject.transform.position.x > transform.position.x)
+            {
+                force = new Vector2(-8, 7);
+            }
+            else
+            {
+                force = new Vector2(8, 7);
+            }
+
+            rb.AddForce(force, ForceMode2D.Impulse);
+            health--;
+            IEnumerator coroutine = Hurt(0.1f, 10);
+            StartCoroutine(coroutine);
+            if (health <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+             
+            }
+        }
+       
         Collider2D collider = collision.collider; 
         
         /*
@@ -245,5 +291,19 @@ public class Player : MonoBehaviour
             }
         }*/
     }
+
+
+    IEnumerator Hurt(float time, int repeat)
+    {
+        int count = 0;
+        while (count <= repeat)
+        {
+            yield return new WaitForSeconds(time);
+            spriterenderer.enabled = !spriterenderer.enabled;
+            count++;
+        }
+        spriterenderer.enabled = true; 
+    }
+
 
 }

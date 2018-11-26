@@ -17,6 +17,21 @@ TextureImporter:
     21300024: LostSoulWalkCycle_12
     21300026: LostSoulWalkCycle_13
     21300028: LostSoulWalkCycle_14
+    21300030: LostSoulWalkCycle_15
+    21300032: LostSoulWalkCycle_16
+    21300034: LostSoulWalkCycle_17
+    21300036: LostSoulWalkCycle_18
+    21300038: LostSoulWalkCycle_19
+    21300040: LostSoulWalkCycle_20
+    21300042: LostSoulWalkCycle_21
+    21300044: LostSoulWalkCycle_22
+    21300046: LostSoulWalkCycle_23
+    21300048: LostSoulWalkCycle_24
+    21300050: LostSoulWalkCycle_25
+    21300052: LostSoulWalkCycle_26
+    21300054: LostSoulWalkCycle_27
+    21300056: LostSoulWalkCycle_28
+    21300058: LostSoulWalkCycle_29
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -103,7 +118,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 196
+        y: 456
         width: 64
         height: 64
       alignment: 9
@@ -113,7 +128,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f0c5356d26e13d479f092142f614ed2
+      spriteID: fa98332d3c7361c4b80cc7c04fa0d95b
       vertices: []
       indices: 
       edges: []
@@ -123,7 +138,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 66
-        y: 196
+        y: 456
         width: 64
         height: 64
       alignment: 9
@@ -133,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 456524768c8a13f46b68c2f253e8019e
+      spriteID: 3f01e86c089789447bd8507ccc75eddf
       vertices: []
       indices: 
       edges: []
@@ -143,7 +158,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 131
-        y: 196
+        y: 456
         width: 64
         height: 64
       alignment: 9
@@ -153,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f469df129b51bd8429a26867f6406f04
+      spriteID: 1565f81cdee4cf74587b428687a4e191
       vertices: []
       indices: 
       edges: []
@@ -163,6 +178,246 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 196
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416a3f69f24fa464d804f4cacd2ad9d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9096668d0641647a39cfd730ff7e21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eac0f78d500d7b478b33d9d85fc68d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a1d0d214cfffc43b9563a9fdf24542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d205e0de04ea2a43b43891b9b2c1c64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb7bc8b9a146ca448dffbd0be62a5bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c5214778c10a34eb93e13925f18cb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d010827d4f8bb47a08a011a30fd25a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caeb275cfa749774b946ef4202ae63d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c89adcfba0d154782b1088a6bba251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d9a3957e308ef41a61947318b8c3e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d05a390b3da28b4583d433f69181a0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_15
+      rect:
+        serializedVersion: 2
+        x: 1
         y: 196
         width: 64
         height: 64
@@ -173,13 +428,73 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9505273deb7821e4083e5d795fe33c98
+      spriteID: 62e3bfc6166b75a4d9c6a0698de0269b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_4
+      name: LostSoulWalkCycle_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88342c301b8bb25419156cbce57943f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db04f870d1e44d469171170c029274d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.74, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adad2a60bafea34c8de0a415b85c4b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LostSoulWalkCycle_19
       rect:
         serializedVersion: 2
         x: 1
@@ -193,13 +508,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 248d2da6f1535564a8346c6d2e2c4611
+      spriteID: d9a72ab87b1a32940a9a91df568d718a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_5
+      name: LostSoulWalkCycle_20
       rect:
         serializedVersion: 2
         x: 66
@@ -213,13 +528,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb991d1897cb2ac4096972d68b445f55
+      spriteID: a297b9a720e938e4f994a6c6a6e392b9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_6
+      name: LostSoulWalkCycle_21
       rect:
         serializedVersion: 2
         x: 131
@@ -233,13 +548,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb752a7bbce0334d8d66f78753d9e08
+      spriteID: 2a611c664898bd94ca756f69f495537e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_7
+      name: LostSoulWalkCycle_22
       rect:
         serializedVersion: 2
         x: 196
@@ -253,13 +568,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22a16854e6f44e44a82109477acaceb2
+      spriteID: c59f9d1a676646e4bbf834e2c93a9d2b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_8
+      name: LostSoulWalkCycle_23
       rect:
         serializedVersion: 2
         x: 1
@@ -273,13 +588,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad6e32d47cf774f4e9d1755022ecb452
+      spriteID: 9a37d05251745074eb5e7da89e216991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_9
+      name: LostSoulWalkCycle_24
       rect:
         serializedVersion: 2
         x: 66
@@ -293,13 +608,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d7a6e2a12c750f4ebde5f3c2d098535
+      spriteID: ad74742de611ffe479d7951f7599f699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_10
+      name: LostSoulWalkCycle_25
       rect:
         serializedVersion: 2
         x: 131
@@ -313,13 +628,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a4b62399afddbd48b947476b7c248d3
+      spriteID: f8eaa88571eeae84e96257c2308d9623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_11
+      name: LostSoulWalkCycle_26
       rect:
         serializedVersion: 2
         x: 196
@@ -333,13 +648,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5da00bc4ae566489171c85b5bbc156
+      spriteID: 79b9acecc4387ed46b31f1b8ccfe2dc3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_12
+      name: LostSoulWalkCycle_27
       rect:
         serializedVersion: 2
         x: 1
@@ -353,13 +668,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce59207528df28b489516c1f408f7319
+      spriteID: f93feca56292072429a372546a0feb7d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_13
+      name: LostSoulWalkCycle_28
       rect:
         serializedVersion: 2
         x: 66
@@ -373,13 +688,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22c23bf923526fe409bab2766951b1f5
+      spriteID: ccecd428c8d813640bd337552182253b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LostSoulWalkCycle_14
+      name: LostSoulWalkCycle_29
       rect:
         serializedVersion: 2
         x: 131
@@ -393,7 +708,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec2d827c4262b894cb060345774fb95d
+      spriteID: 367496773eef2374482a025d368ea27a
       vertices: []
       indices: 
       edges: []
