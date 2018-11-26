@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 76e4e491f5417ef47a4ae28966f00b39
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: eye-bat_0
+    21300002: eye-bat_1
+    21300004: eye-bat_2
+    21300006: eye-bat_3
+    21300008: eye-bat_4
+    21300010: eye-bat_5
+    21300012: eye-bat_6
+    21300014: eye-bat_7
+    21300016: eye-bat_8
+    21300018: eye-bat_9
+    21300020: eye-bat_10
+    21300022: eye-bat_11
+    21300024: eye-bat_12
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: eye-bat_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cc9f2fbf0d2c54fb0e89d270556055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f550ccd6669f449b73ab3017227389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800ca8eea910db7489c6a577ef95ae47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4017759ea731b934f99a101a1fae3c5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e997103df1e9e4fb7f3198540e4c5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497f088ea6fd223438eb2375b4dd5fbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace970bc7a1dea14d919d6d65391a0cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979fed079f213b745bc0b67523b16cea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b736e9ce1d7c746944e5f505c365bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd233f224a07b0b4991f687368dda815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d926bd9fc13ceb04ba8625443a27c47c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a465ce1dd796e9640aa81d564f3daa6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye-bat_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72c04849689d104c88f6c8f0c8e9f14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b36e19d0b52291548ab07800267467e6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

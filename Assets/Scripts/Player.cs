@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public float walkSpeed = 10.0f;
     public float velocity;
-    public float maxVelocity = -40.0f; 
+    public float maxVelocity = -40.0f;
+    public Collider2D edgeCollider; 
     public float gscale;
     public Transform jumpCloud;
     public Transform[] slashes;
@@ -14,7 +16,8 @@ public class Player : MonoBehaviour
     public bool onGround = false;
     bool isAttacking = false; 
     bool facingRight = true;
-    public bool isWhite = true; 
+    public bool isWhite = true;
+    public int health = 10; 
 
     SpriteRenderer spriterenderer;
     SpriteRenderer eye_renderer; 
@@ -32,6 +35,19 @@ public class Player : MonoBehaviour
         eye_animator = eyes.GetComponent<Animator>(); 
     }
 
+    private void FixedUpdate()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.7f); 
+
+        if (hit.collider)
+        {
+            if (hit.collider.tag == "Ground")
+            {
+                animator.SetBool("onWall", true); 
+            }
+                //Debug.Log("You hit the wall");
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -48,13 +64,12 @@ public class Player : MonoBehaviour
             eye_animator.SetBool("isRunning", false); 
             changeObjectColor(jumpCloud); 
             Instantiate(jumpCloud, transform.position, Quaternion.identity);
-          
         }
 
         if (rb.velocity.y <= 0)
         {
             animator.SetBool("isJumping", false);
-            eye_animator.SetBool("isJumping", false); 
+            eye_animator.SetBool("isJumping", false);
         }
 
         if (rb.velocity.y < 0)
@@ -109,9 +124,18 @@ public class Player : MonoBehaviour
             {
                 animator.SetBool("isWalking", true);
                 eye_animator.SetBool("isRunning", true);
-            }
-           
+            }        
         }
+    }
+
+    public void setAttackFalse()
+    {
+        animator.SetBool("AirAttack", false);
+    }
+
+    public bool isPlayerWhite()
+    {
+        return isWhite; 
     }
 
     void Attack()
@@ -129,6 +153,12 @@ public class Player : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.J)) {
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Jump") || animator.GetCurrentAnimatorStateInfo(0).IsName("White-Jump-Down"))
+            {
+                animator.SetBool("AirAttack", true);
+                //animator.ResetTrigger("AttackA");
+            }
+
             if (onGround)
             {
                 isAttacking = true;
@@ -142,12 +172,12 @@ public class Player : MonoBehaviour
                     rotation = 180f;
                 }
 
-                if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Idle-Sword") || animator.GetCurrentAnimatorStateInfo(0).IsName("White-Run"))
-                {
-                    animator.SetTrigger("Attack1");
-                    eye_animator.SetTrigger("Attack1");
-                }
-                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-1"))
+                //if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Idle-Sword") || animator.GetCurrentAnimatorStateInfo(0).IsName("White-Run"))
+                //{
+                //    animator.SetTrigger("Attack1");
+                //    eye_animator.SetTrigger("Attack1");
+                //}
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("White-Attack-1"))
                 {
                     animator.SetTrigger("Attack2");
                     eye_animator.SetTrigger("Attack2");
@@ -160,6 +190,11 @@ public class Player : MonoBehaviour
                     eye_animator.SetTrigger("Attack3");
                     changeObjectColor(slashes[2]);
                     Object.Instantiate(slashes[2], transform.position, Quaternion.Euler(0, rotation, 0));
+                }
+                else
+                {
+                    animator.SetTrigger("Attack1");
+                    eye_animator.SetTrigger("Attack1");
                 }
             }
         }
@@ -176,7 +211,7 @@ public class Player : MonoBehaviour
             }
             else
             {
-                t_sprite.color = Color.black;
+                t_sprite.color = new Color32(32, 23, 76, 255);
             }
         }
     }
@@ -205,11 +240,70 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        onGround = true; 
-        rb.gravityScale = 2;
-        animator.SetBool("isFalling", false);
-        eye_animator.SetBool("isFalling", false); 
-        animator.SetBool("onGround", true);
-        eye_animator.SetBool("onGround", true); 
+        if(collision.collider.tag == "Ground")
+        {
+            onGround = true;
+            animator.SetBool("AirAttack", false);
+            rb.gravityScale = 2;
+            animator.SetBool("isFalling", false);
+            eye_animator.SetBool("isFalling", false);
+            animator.SetBool("onGround", true);
+            eye_animator.SetBool("onGround", true);
+        }
+        else if (collision.collider.tag == "Enemy")
+        {
+            Vector2 force; 
+
+            if (collision.gameObject.transform.position.x > transform.position.x)
+            {
+                force = new Vector2(-8, 7);
+            }
+            else
+            {
+                force = new Vector2(8, 7);
+            }
+
+            rb.AddForce(force, ForceMode2D.Impulse);
+            health--;
+            IEnumerator coroutine = Hurt(0.1f, 10);
+            StartCoroutine(coroutine);
+            if (health <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+             
+            }
+        }
+       
+        Collider2D collider = collision.collider; 
+        
+        /*
+        if (collision.collider.tag == "Ground")
+        {
+            Vector3 contactPoint = collision.contacts[0].point;
+            Vector3 center = collider.bounds.center;
+
+            bool left = contactPoint.x < center.x;
+            bool top = contactPoint.y > center.y;
+
+            if(left)
+            {
+                Debug.Log("Hit wall"); 
+            }
+        }*/
     }
+
+
+    IEnumerator Hurt(float time, int repeat)
+    {
+        int count = 0;
+        while (count <= repeat)
+        {
+            yield return new WaitForSeconds(time);
+            spriterenderer.enabled = !spriterenderer.enabled;
+            count++;
+        }
+        spriterenderer.enabled = true; 
+    }
+
+
 }

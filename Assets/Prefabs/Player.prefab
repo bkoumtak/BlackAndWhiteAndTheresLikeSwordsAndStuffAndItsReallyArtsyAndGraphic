@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4482138196061878}
   - component: {fileID: 95668911660167084}
   - component: {fileID: 212410354442354866}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4492503959315458}
   - component: {fileID: 20446879773823678}
   - component: {fileID: 81161863096576104}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -57,10 +57,10 @@ GameObject:
   - component: {fileID: 95332624655956498}
   - component: {fileID: 114075958951325356}
   - component: {fileID: 50253588580572434}
-  - component: {fileID: 61118736755501480}
-  m_Layer: 0
+  - component: {fileID: 61414887212296770}
+  m_Layer: 2
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1252292374264874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 82.291275, y: -19.376781, z: -0.3501111}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4867758942880644}
@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553650583062486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 15.17, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4482138196061878}
@@ -166,7 +166,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61118736755501480
+--- !u!61 &61414887212296770
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,7 +178,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.14}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -189,7 +189,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 2}
+  m_Size: {x: 1.5, y: 1.72}
   m_EdgeRadius: 0
 --- !u!81 &81161863096576104
 AudioListener:
@@ -247,7 +247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 10
   velocity: 0
-  maxVelocity: -40
+  maxVelocity: -35
+  edgeCollider: {fileID: 0}
   gscale: 0
   jumpCloud: {fileID: 4157696178696586, guid: ac46c16aa9c41504b81eb446ba71ef8e, type: 2}
   slashes:
@@ -337,8 +338,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 38f3c69344ec89d4ea1abfe05a19394a, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300046, guid: 38f3c69344ec89d4ea1abfe05a19394a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: 448fb0a6e2b2d27429d299a7ed0745ea
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tri-ghost_0
+    21300002: tri-ghost_1
+    21300004: tri-ghost_2
+    21300006: tri-ghost_3
+    21300008: tri-ghost_4
+    21300010: tri-ghost_5
+    21300012: tri-ghost_6
+    21300014: tri-ghost_7
+    21300016: tri-ghost_8
+    21300018: tri-ghost_9
+    21300020: tri-ghost_10
+    21300022: tri-ghost_11
+    21300024: tri-ghost_12
+    21300026: tri-ghost_13
+    21300028: tri-ghost_14
+    21300030: tri-ghost_15
+    21300032: tri-ghost_16
+    21300034: tri-ghost_17
+    21300036: tri-ghost_18
+    21300038: tri-ghost_19
+    21300040: tri-ghost_20
+    21300042: tri-ghost_21
+    21300044: tri-ghost_22
+    21300046: tri-ghost_23
+    21300048: tri-ghost_24
+    21300050: tri-ghost_25
+    21300052: tri-ghost_26
+    21300054: tri-ghost_27
+    21300056: tri-ghost_28
+    21300058: tri-ghost_29
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tri-ghost_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff40ecd9c86a41147ba6c1fe8654a618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341733446648c2d498cadb552ae47439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec4830b2112c924988a534e5d2bc9a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 456
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dc7579c1f5dcd44a4b6fabb9b16830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d99e6812666014e8f135d40e9b87da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce0d3aef9f03fd4d8070ba673610432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b969187f7895d4ebfd7ea60c0ca75a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 391
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950086ada07592a49b4a0a4bba3d02a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca737a46e727794c9b2d723e204ac73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e66f20615d0cd47bdcdc28b2c77e1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5751ddbb89e44ef4387bab92ce08b477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 326
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d010eb8ddd7f824b9353366b8e2f4c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d48e1c5b691b03439a1658625f5ea20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7303144a599258743b135d312557b6ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 261
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d45fab8674bf140a8eaecb2f4fe7f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43581dd66a17e54eb3498ef706832d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f6010f0c50b524186ade149b712b67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac38a68ae53542247b2ef98f0c97dfc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd06867d96f011f45878580df25ac824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27a93541e4da2c43a0e10deb67bfe6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_20
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8018949fb1530bf4f9a9245ef511f184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077470c18d5c6ee4882c3dea73b172cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 131
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e46e63747a1cc4b9e0dfaf3289052a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8764f664e67a004895c694c8271dc2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_24
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbc6d9da3233734398b5d7e078f09b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_25
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bc5930ddbc9604298f885d2bb50592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_26
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 66
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08410f5e1339b5a409b4848b74e60bd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc80a0e080d97a448042834657bb2fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_28
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafa372dc81952e43974b25336ffd1b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tri-ghost_29
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff70285fc7b66143a02319c5da3329e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c850f5ee88e7b4645b39b9bf8007be48
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
